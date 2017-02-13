@@ -1,0 +1,10 @@
+
+
+<%= @Cookbook.recipes %>
+
+<ul>
+<% @cookbook.recipes.each_with_index do |recipe, index| %>
+<li><%= "#{recipe.done} #{index + 1}. #{recipe.name}: #{recipe.description} #{recipe.cooking_time}min" %></li>
+<% end %>
+</ul>
+
